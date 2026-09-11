@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'language_screen.dart';
 
@@ -118,18 +119,17 @@ class WelcomeScreen extends StatelessWidget {
                     ),
 
                     // =================================================
-                    // GET STARTED BUTTON
+                    // GET STARTED BUTTON - CLICKABLE AREA
                     // =================================================
 
                     Positioned(
-                      left: imageWidth * 0.20,
-                      right: imageWidth * 0.20,
-                      top: imageHeight * 0.515,
-                      height: imageHeight * 0.085,
+                      left: imageWidth * 0.25,
+                      right: imageWidth * 0.25,
+                      top: imageHeight * 0.54,
+                      height: imageHeight * 0.075,
 
                       child: GestureDetector(
-                        behavior:
-                            HitTestBehavior.opaque,
+                        behavior: HitTestBehavior.opaque,
 
                         onTap: () {
                           _goToLanguageScreen(context);
